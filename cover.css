@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(121, 121, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+  }
+
+  .startgame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 60vh;
+    background-color: black;
+    box-shadow: 10px 10px 5px black;
+  }
+  
+  .startgame marquee {
+    color: white;
+  }
+  
+  .startgame h1 {
+    font-size: 24px;
+    margin:0 50px 50px 70px;
+  }
+  
+  .startgame a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+#index{
+    text-decoration: none;
+    margin-left: 250px;
+    border: 2px solid black;
+    padding: 20px;
+}
+#index:hover{
+    background-color: rgb(121, 121, 167);
+}
