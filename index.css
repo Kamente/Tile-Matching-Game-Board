@@ -3,13 +3,11 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
- 
- 
   }
   
   body {
     background-color: gray;
-    margin: 50px 100px 50px 100px;
+    margin: 50px 100px 100px 100px;
 
   }
 h1{
@@ -32,4 +30,28 @@ h1{
     height: 100px;
     background-color: blue;
     margin: 25px 25px 25px 25px;
+    cursor: pointer;
+}
+
+
+.tile.selected {
+  border: 2px solid red;
+}
+
+.tile.matched {
+  opacity: 0.5;
+}
+.restart{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 45%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.restart:hover{
+    box-shadow: 5px 5px 5px black;
 }
