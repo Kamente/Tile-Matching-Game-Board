@@ -12,24 +12,24 @@ html {
     margin: 50px 100px 50px 100px;
 
   }
-  
 h1{
     text-align: center;
     font-size: 50px;
     color: black;
+    text-decoration: underline;
     font-weight: bold;
     padding-top: 20px;
 }
+
 .row {
     display: flex;
     justify-content: center;
     margin: 50px 50px 50px 50px;
-  }
+}
   
-  .tile {
+.tile {
     width: 100px;
     height: 100px;
     background-color: blue;
     margin: 25px 25px 25px 25px;
-  }
-  
+}
