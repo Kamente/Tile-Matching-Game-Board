@@ -41,17 +41,20 @@ h1{
 .tile.matched {
   opacity: 0.5;
 }
-.restart{
+.play{
     background-color: black;
     color: white;
     font-weight: bold;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 40px;
     margin-left: 45%;
-    margin-bottom: 5px;
     cursor: pointer;
+
 }
-.restart:hover{
+.play:hover{
     box-shadow: 5px 5px 5px black;
+}
+#timer{
+    align-items: center;
+    font-size: 40px;
+    color: black;
 }
