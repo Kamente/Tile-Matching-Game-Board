@@ -59,33 +59,22 @@ body {
 
 @keyframes left-center{
   0%{
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  100%{
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 }
 
 @keyframes right-center{
   0%{
-    opacity: 0;
+    opacity: 1;
     transform: translateX(100%);
   }
-  100%{
-    opacity: 1;
-    transform: translateX(0);
-  }
+
 }
 @keyframes up{
   0%{
-    opacity: 0;
+    opacity: 1;
     transform: translateY(100%);
   }
-  100%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+} 
 
