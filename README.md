@@ -14,9 +14,10 @@ A tile-matching-game-board is a game puzzle i created using html, css and javasc
 
 
 ## Website Sketch
-Screenshot from 2023-05-21 20-34-34.png
+![Screenshot from 2023-05-21 20-34-34](https://github.com/Kamente/Tile-Matching-Game-Board/assets/86584314/f0fade33-8439-4c26-8b9c-8bbe49fb8ba9)
+![Screenshot from 2023-05-21 20-33-13](https://github.com/Kamente/Tile-Matching-Game-Board/assets/86584314/00abb073-ffa4-4ba0-aa4a-8ad39ede6f96)
 
-Screenshot from 2023-05-21 20-33-13.png
+
 
 ## Copyright and License
 MIT License
