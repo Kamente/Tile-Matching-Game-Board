@@ -1,63 +1,80 @@
-html {
-    background-image: url('./Assets/image.avif');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  body {
-    background-color: gray;
-    margin: 50px 100px 100px 100px;
-
-  }
-h1{
-    text-align: center;
-    font-size: 50px;
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
-    padding-top: 20px;
-}
-
-.row {
+body {
+    background-color: rgb(21, 21, 61);
     display: flex;
     justify-content: center;
-    margin: 50px 50px 50px 50px;
-}
-  
-.tile {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    margin: 25px 25px 25px 25px;
-    cursor: pointer;
-}
-
-
-.tile.selected {
-  border: 2px solid red;
-}
-
-.tile.matched {
-  opacity: 0.5;
-}
-.play{
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
-    margin-left: 45%;
-    cursor: pointer;
-
-}
-.play:hover{
-    box-shadow: 5px 5px 5px black;
-}
-#timer{
     align-items: center;
-    font-size: 40px;
+    padding: 100px;
+
+  }
+
+  .startgame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 60vh;
+    background-color: black;
+    box-shadow: 10px 10px 5px black;
+  }
+  
+  .startgame marquee {
+    color: white;
+  }
+  
+  .startgame h1 {
+    font-size: 24px;
+    margin:0 50px 50px 70px;
+  }
+  
+  .startgame a {
+    display: inline-block;
+    background-color: white;
     color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+#index{
+    text-decoration: none;
+    margin-left: 250px;
+    border: 2px solid black;
+    padding: 20px;
+    animation-name: up;
+    animation-duration: 2.5s;
 }
-/* .tile img {
-  visibility: hidden;
-} */
+#index:hover{
+    background-color: rgb(121, 121, 167);
+}
+
+#left{
+  animation-name: left-center;
+  animation-duration: 2.5s;   
+}
+#right{
+  animation-name: right-center;
+  animation-duration: 2.5s;   
+}
+
+@keyframes left-center{
+  0%{
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes right-center{
+  0%{
+    opacity: 1;
+    transform: translateX(100%);
+  }
+
+}
+@keyframes up{
+  0%{
+    opacity: 1;
+    transform: translateY(100%);
+  }
+} 
+
