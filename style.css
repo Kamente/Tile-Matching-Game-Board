@@ -1,0 +1,63 @@
+html {
+    background-image: url('./Assets/image.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  body {
+    background-color: gray;
+    margin: 50px 100px 100px 100px;
+
+  }
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+}
+  
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 25px 25px 25px 25px;
+    cursor: pointer;
+}
+
+
+.tile.selected {
+  border: 2px solid red;
+}
+
+.tile.matched {
+  opacity: 0.5;
+}
+.play{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 45%;
+    cursor: pointer;
+
+}
+.play:hover{
+    box-shadow: 5px 5px 5px black;
+}
+#timer{
+    align-items: center;
+    font-size: 40px;
+    color: black;
+}
+/* .tile img {
+  visibility: hidden;
+} */
