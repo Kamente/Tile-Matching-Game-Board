@@ -2,7 +2,7 @@
 Author: Kamente Justin
 
 ## Description 
-A tile-matching-game-board is a game puzzle i created using html, css and javascript. A player makes move by selecting two tiles which can be identical or unidentical to each other from board of 12 tiles .
+A tile-matching-game-board is a game puzzle i created using html, css and javascript. A player makes move by selecting two tiles which can be identical or unidentical to each other from board of 12 tiles .After starting the game timer stops when two matching images are selected or when the page is refreshed.
 
 ## Technologies
 - HTML
