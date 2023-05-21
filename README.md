@@ -10,7 +10,7 @@ A tile-matching-game-board is a game puzzle i created using html, css and javasc
 - JavaScript
 
 ## Deployment Link
-
+https://kamente.github.io/Tile-Matching-Game-Board/
 
 
 ## Website Sketch
