@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(121, 121, 167);
+    background-color: rgb(21, 21, 61);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,51 @@ body {
     margin-left: 250px;
     border: 2px solid black;
     padding: 20px;
+    animation-name: up;
+    animation-duration: 2.5s;
 }
 #index:hover{
     background-color: rgb(121, 121, 167);
 }
+
+#left{
+  animation-name: left-center;
+  animation-duration: 2.5s;   
+}
+#right{
+  animation-name: right-center;
+  animation-duration: 2.5s;   
+}
+
+@keyframes left-center{
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes right-center{
+  0%{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes up{
+  0%{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
