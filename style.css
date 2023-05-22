@@ -58,6 +58,24 @@ h1{
     font-size: 40px;
     color: black;
 }
+
+/* styling for a website responsiveness on a min-width of 480px*/
+@media (max-width:480px){
+  .row{
+    display: flex;
+    justify-content: center;
+  }
+  #timer{
+    align-items: center;
+    font-size: 40px;
+    color: black;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /* .tile img {
   visibility: hidden;
 } */
