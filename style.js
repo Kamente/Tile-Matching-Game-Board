@@ -1,8 +1,10 @@
 var tiles = document.querySelectorAll('.tile');
 var Play = document.querySelector('.play');
+var movesCount = 0;
 let startTime;
 var timer = null;
 let firstClickedTile = null;
+let matchedCount = 0; 
 
 Play.addEventListener('click', function() {
   resetGame();
@@ -24,9 +26,8 @@ function shuffleTiles() {
 }
 
 window.onload = function(){
-    shuffleTiles();
-    // startTimer();
-  }
+  shuffleTiles();
+}
 
 function clickHandler(event) {
   var clickedTile = event.target.closest('.tile');
@@ -37,9 +38,11 @@ function clickHandler(event) {
 
   clickedTile.classList.add('selected');
   clickedTile.classList.remove('matched');
+  movesCount++; 
 
   if (firstClickedTile === null) {
     firstClickedTile = clickedTile;
+    startTimer(); 
     return;
   }
 
@@ -53,15 +56,17 @@ function clickHandler(event) {
     firstClickedTile.classList.remove('selected');
     clickedTile.classList.remove('selected');
     firstClickedTile = null;
-    clearInterval(timer);
+    matchedCount += 2;
+
+    if (matchedCount === tiles.length) {
+      clearInterval(timer); 
+      console.log("Total Moves: " + movesCount);
+      alert("Congrats Big Guy");
+    }
   }
   else {
-    console.log("Oops &#128514");
-    setTimeout(function() {
-      firstClickedTile.classList.remove('selected');
-      clickedTile.classList.remove('selected');
-      firstClickedTile = null;
-    }, 1000);
+
+    alert("Not Identical! Press play Again");
   }
 }
 
@@ -92,4 +97,7 @@ function resetGame() {
   });
 
   firstClickedTile = null;
+  matchedCount = 0;
+  movesCount = 0;
 }
+
