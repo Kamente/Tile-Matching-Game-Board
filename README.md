@@ -10,9 +10,9 @@ A tile-matching-game-board is a game puzzle i created using html, css and javasc
 - JavaScript
 
 ## Program Setup
-1. Clone repo from my Github to editor
-2. Can edit to meet the requirements of the user
-3. Deploy 
+1. Git clone https://github.com/Kamente/Tile-Matching-Game-Board.git
+2. Edit the code to your specifications if any. 
+3. Can deploy 
 
 ## Deployment Link
 https://kamente.github.io/Tile-Matching-Game-Board/
